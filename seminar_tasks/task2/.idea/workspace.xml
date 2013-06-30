@@ -4,7 +4,7 @@
     <list default="true" id="7cada18e-4b25-475f-a38d-8608e9d5f1b6" name="Default" comment="" />
     <ignored path="task2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/StackCalc.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372506876478" ignored="false" />
+    <file path="/StackCalc.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372605671096" ignored="false" />
     <file path="/fragment.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372468983931" ignored="false" />
     <file path="/PushCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372483483195" ignored="false" />
     <file path="/PopCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372484772435" ignored="false" />
@@ -14,6 +14,11 @@
     <file path="/SubCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372504138877" ignored="false" />
     <file path="/MultCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372504810757" ignored="false" />
     <file path="/DevCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372506770944" ignored="false" />
+    <file path="/CommandFabric.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372596810488" ignored="false" />
+    <file path="D:/PROG/JAVA/testing/test_2_1(fabric)/src/com/ulyanova/myfabric/command.properties" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372592593569" ignored="false" />
+    <file path="/command.properties" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372592593569" ignored="false" />
+    <file path="/commands.properties" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372598082146" ignored="false" />
+    <file path="/PrintCommand.java" changelist="7cada18e-4b25-475f-a38d-8608e9d5f1b6" time="1372598036783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +82,27 @@
       <file leaf-file-name="StackCalc.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.96653545">
+            <state line="46" column="35" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.8969697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/PushCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/PrintCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="37" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#StackCalc#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,9 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/DevCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="33" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +120,8 @@
       <file leaf-file-name="MultCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/MultCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="33" selection-start="321" selection-end="417" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,10 +129,8 @@
       <file leaf-file-name="SubCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SubCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,22 +138,8 @@
       <file leaf-file-name="SqrtCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SqrtCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SumCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SumCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#SumCommand#0" expanded="false" />
-              </folding>
+            <state line="13" column="92" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +148,26 @@
         <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/Command.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandFabric.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/CommandFabric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#707#724#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commands.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="56" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,6 +192,10 @@
         <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SubCommand.java" />
         <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/MultCommand.java" />
         <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/DevCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/commands.properties" />
+        <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/CommandFabric.java" />
+        <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/PrintCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands.properties" />
         <option value="$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java" />
       </list>
     </option>
@@ -205,7 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,6 +292,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,6 +310,11 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ainex\Google Диск\PROG\Java\IdeaProjects\seminar_tasks\task2\src\com\suhorukov\ulyanova\task2" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.StackCalc">
     <configuration default="false" name="StackCalc" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.suhorukov.ulyanova.task2.StackCalc" />
@@ -297,7 +328,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="task2" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -313,6 +350,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -340,19 +390,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -419,7 +456,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -504,40 +541,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#StackCalc#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="68" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#StackCalc#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -546,10 +549,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#StackCalc#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -563,10 +563,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#StackCalc#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,39 +581,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SumCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#SumCommand#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SqrtCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SubCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/MultCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SumCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+        <state line="19" column="1" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/CommandFabric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#707#724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,19 +607,51 @@
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/DevCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="33" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/MultCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="321" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/PrintCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/PushCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/commands/SqrtCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="92" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/suhorukov/ulyanova/task2/StackCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.96653545">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#StackCalc#0" expanded="false" />
-          </folding>
+        <state line="46" column="35" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.8969697">
+          <folding />
         </state>
       </provider>
     </entry>
