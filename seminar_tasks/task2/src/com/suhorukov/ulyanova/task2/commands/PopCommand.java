@@ -2,6 +2,7 @@ package com.suhorukov.ulyanova.task2.commands;
 
 import com.suhorukov.ulyanova.task2.Command;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Stack;
  */
 public class PopCommand implements Command {
    @Override
-   public void execute(Stack<Double> v, String userInput) {
+   public void execute(Stack<Double> v, String userInput, HashMap<String, Double> defined) {
         v.pop();
 
    }
