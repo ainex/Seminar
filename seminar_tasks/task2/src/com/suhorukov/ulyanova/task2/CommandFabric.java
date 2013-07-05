@@ -23,7 +23,7 @@ public class CommandFabric {
     public static HashMap <String, Command>  setCommands (String fileName) throws ClassNotFoundException, IllegalAccessException, IOException, InstantiationException {
 
         p = new Properties();
-        commandMap = new HashMap<String, Command>();
+        commandMap = new HashMap<>();
 
         InputStream inputStr = CommandFabric.class.getResourceAsStream(fileName);
         //inputStr  java.io.BufferedInputStream

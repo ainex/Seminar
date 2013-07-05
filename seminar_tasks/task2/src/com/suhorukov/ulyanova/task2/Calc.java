@@ -15,34 +15,38 @@ import java.util.Stack;
  */
 public class Calc {
 
-    private Command calcCmd;
-    private HashMap<String, Command> commandMap;  //Contains calculator's commands
-    private HashMap <String, Double> defined;    //Contains user defined variables
-
+    private Command calcCmd; //concrete commands
+    private final HashMap<String, Command> commandMap;  //Contains all available calculator's commands
+    private HashMap <String, Double> defined;    //Contains user defined variables like x = 10.5
+    private Stack<Double> st;
 
     public Calc(String fileName) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
+        this.calcCmd = null;
         this.commandMap = CommandFabric.setCommands(fileName); //fileName contains all possible calc's commands
-        System.out.println(commandMap);
-
+        this.st = new Stack<>();
         this.defined = new HashMap<>();
     }
 
-    public Stack<Double> execute (String [] strCommand, Stack<Double> st) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
-
-       System.out.println(commandMap);
-
+    public void calculate (String[] strCommand) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
 
         for (int i=0; i<strCommand.length; i++)  {
             if (commandMap.containsKey(strCommand[i])) {
-                System.out.println(strCommand[i]);
                 calcCmd = commandMap.get(strCommand[i]);
-                if (strCommand[i].equals("PUSH")) i++;
+                if (strCommand[i].equals("PUSH")) {
+                    i++;
+
+                }
+                /*if (strCommand[i].equals("DEFINE")) {
+                    i++;
+                    calcCmd.execute(st, strCommand[i+1], defined);
+                } */
+
                 calcCmd.execute(st, strCommand[i], defined);
             }
         }
 
         System.out.println(st);
-    return st;
+
     }
 
 
