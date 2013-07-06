@@ -19,12 +19,18 @@ public class Calc {
     private final HashMap<String, Command> commandMap;  //Contains all available calculator's commands
     private HashMap <String, Double> defined;    //Contains user defined variables like x = 10.5
     private Stack<Double> st;
+    private CommandFabric commandFabric;
 
     public Calc(String fileName) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
         this.calcCmd = null;
-        this.commandMap = CommandFabric.setCommands(fileName); //fileName contains all possible calc's commands
+        this.commandFabric = new CommandFabric();
+        this.commandMap = commandFabric.setCommands(fileName); //fileName contains all possible calc's commands
         this.st = new Stack<>();
-        this.defined = new HashMap<>();
+        this.defined = new HashMap<>();     //add default constructor
+    }
+
+    public Calc() throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+        this("commands.properties") ;
     }
 
     public void calculate (String[] strCommand) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {

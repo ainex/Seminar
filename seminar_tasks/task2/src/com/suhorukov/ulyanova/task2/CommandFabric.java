@@ -17,13 +17,17 @@ import java.util.Properties;
  * To change this template use File | Settings | File Templates.
  */
 public class CommandFabric {
-    private static Properties p;
-    private static HashMap <String,  Command> commandMap;
+    private  Properties p;
+    private  HashMap <String,  Command> commandMap;
 
-    public static HashMap <String, Command>  setCommands (String fileName) throws ClassNotFoundException, IllegalAccessException, IOException, InstantiationException {
-
+    public CommandFabric() {
         p = new Properties();
         commandMap = new HashMap<>();
+    }
+
+    public  HashMap <String, Command>  setCommands (String fileName) throws ClassNotFoundException, IllegalAccessException, IOException, InstantiationException {
+
+
 
         InputStream inputStr = CommandFabric.class.getResourceAsStream(fileName);
         //inputStr  java.io.BufferedInputStream

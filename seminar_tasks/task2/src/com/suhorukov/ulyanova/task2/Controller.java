@@ -1,9 +1,7 @@
 package com.suhorukov.ulyanova.task2;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,33 +11,25 @@ import java.io.InputStreamReader;
  * To change this template use File | Settings | File Templates.
  */
 public class Controller {
-    private static String inputStrCommand;
-    private static String[] strCommand;
-    private static BufferedReader br;
-    private static Calc stackCalc;
+    private  String inputStrCommand;
+    private  String[] strCommand;
+    private  BufferedReader br;
+    private  Calc stackCalc;
 
-
-
-    public static void getCommands (String[] source) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException {
+    public Controller(BufferedReader reader ) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
+       this.br = reader;
         stackCalc = new Calc("commands.properties");
-        String cmdFile="";
-        if (source.length!=0) cmdFile=source[0];
-        System.out.println(cmdFile);
-        if ("".equals(cmdFile)) {
-            System.out.println("Enter expression for calculation:");
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
-        else {
-            br = new BufferedReader(new FileReader(cmdFile));
-        }
+    }
+
+
+    public void calculate () throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException {
 
         while ((inputStrCommand =br.readLine())!=null && inputStrCommand.length()!=0) {
-
             inputStrCommand = inputStrCommand.trim();
-            inputStrCommand = inputStrCommand.replaceAll("\\s+"," ");
+            inputStrCommand = inputStrCommand.replaceAll("\\s+", " ");
+            System.out.println("string commans" + inputStrCommand);
             strCommand = inputStrCommand.split(" ");
             stackCalc.calculate(strCommand);
         }
-
     }
 }

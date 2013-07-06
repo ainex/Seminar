@@ -19,10 +19,10 @@ public class PushCommand implements Command {
         java.lang.IllegalArgumentException
         java.lang.NumberFormatException */
 
-       if (Character.isDigit(userInput.charAt(0))) {
-           v.push(new Double(userInput) );
-       } else if (defined.containsKey(userInput)){
-           v.push(defined.get(userInput) );
+       if (defined.containsKey(userInput)) {
+           v.push(defined.get(userInput));
+       } else  {
+           v.push(new Double(userInput));
        }
 
     }
