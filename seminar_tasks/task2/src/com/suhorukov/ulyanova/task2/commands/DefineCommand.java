@@ -15,7 +15,9 @@ import java.util.Stack;
 public class DefineCommand implements Command  {
     @Override
     public void execute(Stack<Double> v, String userInput, HashMap<String, Double> defined) {
-
-        defined.put(userInput, new Double(userInput) );
+        String [] forDef;
+        forDef=userInput.split(" ");
+        defined.put(forDef[0], new Double(forDef[1]));
+        System.out.println(defined);
     }
 }

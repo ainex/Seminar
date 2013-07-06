@@ -34,18 +34,17 @@ public class Calc {
                 calcCmd = commandMap.get(strCommand[i]);
                 if (strCommand[i].equals("PUSH")) {
                     i++;
-
+                    calcCmd.execute(st, strCommand[i], defined);
+                } else if (strCommand[i].equals("DEFINE")) {
+                            String str = strCommand[++i] + " " + strCommand[++i];
+                            calcCmd.execute(st, str, defined);
+                } else {
+                    calcCmd.execute(st, strCommand[i], defined);
                 }
-                /*if (strCommand[i].equals("DEFINE")) {
-                    i++;
-                    calcCmd.execute(st, strCommand[i+1], defined);
-                } */
-
-                calcCmd.execute(st, strCommand[i], defined);
             }
         }
 
-        System.out.println(st);
+        System.out.println(st);   //Prints stack after each line command
 
     }
 

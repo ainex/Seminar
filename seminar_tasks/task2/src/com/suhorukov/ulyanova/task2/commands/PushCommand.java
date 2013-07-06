@@ -15,7 +15,15 @@ import java.util.Stack;
 public class PushCommand implements Command {
     @Override
     public void execute(Stack<Double> v, String userInput, HashMap<String, Double> defined) {
+        /* throws java.lang.RuntimeException
+        java.lang.IllegalArgumentException
+        java.lang.NumberFormatException */
 
-        v.push(new Double(userInput) );
+       if (Character.isDigit(userInput.charAt(0))) {
+           v.push(new Double(userInput) );
+       } else if (defined.containsKey(userInput)){
+           v.push(defined.get(userInput) );
+       }
+
     }
 }
