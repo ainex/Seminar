@@ -23,10 +23,10 @@ public class Calc {
 
     public Calc(String fileName) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
         this.calcCmd = null;
-        this.commandFabric = new CommandFabric();
-        this.commandMap = commandFabric.setCommands(fileName); //fileName contains all possible calc's commands
+        this.commandFabric = new CommandFabric(fileName);
+        this.commandMap = commandFabric.setCommands(); //fileName contains all possible calc's commands
         this.st = new Stack<>();
-        this.defined = new HashMap<>();     //add default constructor
+        this.defined = new HashMap<>();
     }
 
     public Calc() throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {

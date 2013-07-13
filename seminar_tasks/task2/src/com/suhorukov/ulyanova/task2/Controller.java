@@ -17,7 +17,7 @@ public class Controller {
     private  Calc stackCalc;
 
     public Controller(BufferedReader reader ) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
-       this.br = reader;
+        this.br = reader;
         stackCalc = new Calc("commands.properties");
     }
 
@@ -29,6 +29,7 @@ public class Controller {
             inputStrCommand = inputStrCommand.replaceAll("\\s+", " ");
             System.out.println("string commans" + inputStrCommand);
             strCommand = inputStrCommand.split(" ");
+
             stackCalc.calculate(strCommand);
         }
     }

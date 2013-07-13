@@ -3,6 +3,7 @@ package com.suhorukov.ulyanova.task2.commands;
 import com.suhorukov.ulyanova.task2.Command;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Stack;
 public class ExitCommand implements Command {
 
     @Override
-    public void execute (Stack<Double> v, String userInput, HashMap<String, Double> defined){
+    public void execute (Stack<Double> v, String userInput, Map<String, Double> defined){
      System.exit(0);
     }
 }

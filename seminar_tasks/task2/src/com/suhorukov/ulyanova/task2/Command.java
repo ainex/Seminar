@@ -1,6 +1,7 @@
 package com.suhorukov.ulyanova.task2;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -11,5 +12,5 @@ import java.util.Stack;
  * To change this template use File | Settings | File Templates.
  */
 public interface Command {
-    void execute(Stack<Double> v, String userInput, HashMap<String, Double> defined);
+    void execute(Stack<Double> v, String userInput, Map<String, Double> defined);
 }

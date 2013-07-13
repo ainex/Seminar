@@ -3,6 +3,7 @@ package com.suhorukov.ulyanova.task2.commands;
 import com.suhorukov.ulyanova.task2.Command;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Stack;
  * To change this template use File | Settings | File Templates.
  */
 public class SumCommand implements Command {
-    public void execute(Stack<Double> v, String userInput, HashMap<String, Double> defined){
+    public void execute(Stack<Double> v, String userInput, Map<String, Double> defined){
 
         v.push( v.pop()+v.pop() );
 

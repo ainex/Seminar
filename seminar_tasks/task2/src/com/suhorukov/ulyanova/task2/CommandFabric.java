@@ -5,6 +5,7 @@ import com.suhorukov.ulyanova.task2.commands.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -17,18 +18,12 @@ import java.util.Properties;
  * To change this template use File | Settings | File Templates.
  */
 public class CommandFabric {
-    private  Properties p;
+
     private  HashMap <String,  Command> commandMap;
 
-    public CommandFabric() {
-        p = new Properties();
+    public CommandFabric(String fileName) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException {
+        Properties p = new Properties();
         commandMap = new HashMap<>();
-    }
-
-    public  HashMap <String, Command>  setCommands (String fileName) throws ClassNotFoundException, IllegalAccessException, IOException, InstantiationException {
-
-
-
         InputStream inputStr = CommandFabric.class.getResourceAsStream(fileName);
         //inputStr  java.io.BufferedInputStream
         p.load(new InputStreamReader(inputStr, "cp1251")); // .load needs Reader
@@ -40,7 +35,11 @@ public class CommandFabric {
             Class cls = Class.forName(className);
             Object cmd = cls.newInstance();
             commandMap.put(commandName, (Command)cmd);
-       }
+        }
+    }
+
+    public  HashMap <String, Command>  setCommands ()  {
+
 
         return commandMap;
     }
