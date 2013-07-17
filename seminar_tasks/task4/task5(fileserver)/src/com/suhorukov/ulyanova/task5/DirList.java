@@ -1,7 +1,7 @@
 package com.suhorukov.ulyanova.task5;
 
 import java.io.File;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,13 +12,32 @@ import java.util.Arrays;
  */
 public class DirList {
 
-    public  void dir(String[] args) {
-        File path = new File(args[0]);
-        String[] list;
-        list = path.list();
 
-        Arrays.sort(list, String.CASE_INSENSITIVE_ORDER);
-        for(String dirItem : list)
-            System.out.println(dirItem);
+    public List<File> getDirItems (String args) {
+        System.out.println("path = " + args);
+        File path = new File(args);
+        List<File> dirItemsList = new ArrayList<File>();
+
+        for(File dirItem : path.listFiles()) {
+            dirItemsList.add(dirItem);
+        }
+
+
+         class DirItemsComparator implements Comparator<File>{
+            public int compare(File item1, File item2){
+
+                if ((item1.isDirectory()&&item2.isDirectory()) || (item1.isFile()&&item2.isFile()) ) {
+                return item1.compareTo(item2);
+                } else return -1;
+            }
+         }
+
+
+        Collections.sort(dirItemsList, new DirItemsComparator());
+
+        return dirItemsList;
     }
+
+
+
 }
