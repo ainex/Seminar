@@ -1,15 +1,8 @@
-List, Set и Map
-Основные примитивы:
-1. Collection - упорядоченный список элементов, доступ только через итератор
-2. List – упорядоченный список элементов с возможностью доступа по индексу
-3. Set – множество без дубликатов и без доступа по индексу
-4. Map – множество пар ключ-значение, где ключи не повторяются. Нет доступа по
-индексу
-Их основные реализации:
-1. ArrayList — аналог массива переменного размера, очень быстрый доступ по индексу
-2. LinkedList — список элементов связанных друг с другом ссылками на соседей. Очень
-медленный доступ по индексу, быстро только первый и последний элемент.
-3. HashMap, HashSet — реализации на основе функции hashCode
-4. TreeMap, TreeSet – элементы (ключи) должны быть Comporable, реализация на основе
-дерева. Добавляют понятие упорядоченности. Лучшее время поиска, но большее
-накладные расходы на построение чем на основе функции hashCode
+This class consists exclusively of static methods that operate on or return collections. It contains polymorphic algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, and a few other odds and ends.
+The methods of this class all throw a NullPointerException if the collections or class objects provided to them are null.
+
+The documentation for the polymorphic algorithms contained in this class generally includes a brief description of the implementation. Such descriptions should be regarded as implementation notes, rather than parts of the specification. Implementors should feel free to substitute other algorithms, so long as the specification itself is adhered to. (For example, the algorithm used by sort does not have to be a mergesort, but it does have to be stable.)
+
+The "destructive" algorithms contained in this class, that is, the algorithms that modify the collection on which they operate, are specified to throw UnsupportedOperationException if the collection does not support the appropriate mutation primitive(s), such as the set method. These algorithms may, but are not required to, throw this exception if an invocation would have no effect on the collection. For example, invoking the sort method on an unmodifiable list that is already sorted may or may not throw UnsupportedOperationException.
+
+This class is a member of the Java Collections Framework.
