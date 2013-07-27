@@ -1,5 +1,0 @@
-PUSH -10 PRINT  PUSH 5 +
-DEFINE x 15 DEFINE y 20
-PUSH x PUSH y +
-
-
